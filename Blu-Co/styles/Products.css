@@ -1,0 +1,180 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url(../images/background.jpg) no-repeat center center fixed; 
+   
+    margin: 0;
+    padding: 20px;
+}
+header{
+    background:lch(100% 0 0 / 0.7);
+  margin:0;
+}
+
+
+#topBar {
+    border-block: 10px solid #111;
+    
+    background: repeating-linear-gradient(45deg, #5db3d8, 15%, #3226cf 20%);
+    color: #111;
+    padding:20px;
+}
+
+#topBar h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  text-align: center;
+  padding: 20px;
+}
+
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+.product {
+  display: flex;
+  flex-direction: column; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 280px; 
+  box-sizing: border-box; 
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px; 
+}
+
+
+.product h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+
+
+.product p {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+
+button {
+  background-color: #005a8d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003f63;
+}
+
+
+footer {
+  background-color: #005a8d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .product-list {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .product {
+    width: 90%; 
+  }
+
+  .product-image {
+    width: 100%; 
+    margin-bottom: 15px; 
+  }
+
+  
+  nav a {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ 
+  .product {
+    width: 100%; 
+    padding: 15px;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+}
+  
+@media screen and (max-width: 768px) {
+    #topBar a {
+        left: auto;  
+        top: auto;   
+        margin: 10px; 
+        font-size: 1em;
+        inline-size: auto; 
+    }
+}
